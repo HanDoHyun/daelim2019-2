@@ -1,4 +1,4 @@
-# 홍길동 :daelim 2019-2 project
+# 한도현 :daelim 2019-2 project
 ## 2019.09.20
 ### index.html / main.css 생성
 1.주석추가<br>
