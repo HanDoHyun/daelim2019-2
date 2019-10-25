@@ -47,69 +47,64 @@
 
 
 <!-- ul-li를 이용한 메인 메뉴 -->
-<div id="blogMenu">
-    <ul>
-    <li><a href="#">한도현</a></li>
-    <li><a href="#">Menu 1</a></li>
-    
-     
-    
-    <li><a href="#">Menu 2</a>
-    
-     
-    
-    <ul>
-    <li><a href="#">Sub Menu 1</a></li>
-    <li><a href="#">Sub Menu 2</a></li>
-    <li><a href="#">Sub Menu 3</a></li>
+<nav>
+    <ul class="main-menu">
+        <li><a href="#header" class="name">한도현</a></li>
+        <li class="menu-1"><a>메뉴1</a>
+            <ul class="sub-menu">
+                <li><a href="#block">block</a></li>
+                <li><a href="#image">이미지</a></li>
+                <li><a href="#audio">오디오</a></li>
+                <li><a href="#video">유튜브/비디오</a></li>
+                <li><a href="#table">테이블</a></li>
+                <li><a href="#grid">그리드</a></li>
+            </ul>
+        </li>
+
+        <li class="menu-1"><a>Dom</a>
+            <ul class="sub-menu">
+                <li><a href="dom_basic.html" target="blank">dom_basic</a></li>
+                <li><a href="dom_basic2.html" target="blank">dom_basic2</a></li>
+                <li><a href="dom_time.html" target="blank">dom_time</a></li>
+            </ul>
+        </li>
+
+        <li class="menu-1"><a>제이쿼리</a>
+        <ul class="sub-menu">
+              <li><a href="jqueryTest.html" target="blank">jqueryTest</a></li>
+              <li><a href="jqueryTest2.html" target="blank">jqueryTest2</a></li>
+              <li><a href="jqueryTest3.html" target="blank">jqueryTest3</a></li>
+              <li><a href="jqueryTest4.html" target="blank">jqueryTest4</a></li>
+              <li><a href="jqueryTest5.html" target="blank">jqueryTest5</a></li>
+              <li><a href="jqueryTest6.html" target="blank">jqueryTest6</a></li>
+              <li><a href="jqueryTest7.html" target="blank">jqueryTest7</a></li>
+         </ul>
+        </li>
+        <li><a>메뉴4</a></li>
+        <li><a>메뉴5</a></li>
     </ul>
-    
-     
-    
-    </li>
-    
-    
-    <li><a href="#">Menu 3</a>
-    
-     
-    
-    <ul>
-    <li><a href="#">Sub Menu 1</a></li>
-    <li><a href="#">Sub Menu 2</a></li>
-    <li><a href="#">Sub Menu 3</a></li>
-    <li><a href="#">Sub Menu 4</a></li>
-    </ul>
-    
-     
-    
-    </li>
-    
-    
-    <li><a href="#">Menu 4</a></li>
-    <li><a href="#">Menu 5</a></li>
-    </ul>
-    </div>
+</nav>
 
 
-
-
+<a name="block"></a>
   <article class="article-bg">
-    <h2>9월20일 : inline-bluck test</h2>
+    <a href="blick"><h2>9월20일 : inline-bluck test</h2></a>
     <div class="box-test">블럭1</div>
     <div class="box-test">블럭2</div>
     <div class="box-test">블럭3</div>
   </article>
   
-  
+  <a name="image"></a>
   <article class="article-2bg">
     <h2>한도현</h2>
 
-   <img class="image-cropper-50" src="images/1.jpg" alt="">
-   <img class="image-cropper-25" src="images/2.jpg" alt="">
-   <img class="image-cropper-5"  src="images/3.jpg" alt="">
+   <img class="image-corpper-50" src="images/1.jpg" alt="">
+   <img class="image-corpper-25" src="images/2.jpg" alt="">
+   <img class="image-corpper-5"  src="images/3.jpg" alt="">
 
   </article>
   
+  <a name="audio"></a>
   <article class="article-3rd-bg">
     <section>
       <h3>오디오</h3>
@@ -120,9 +115,9 @@
 
     </section>
   </article>
-
-  <article class="article-4">
-    <section>
+  <a name="video"></a>
+   <article class="article-4">
+     <section>
       <h3>video tag</h3>
       <video controls>
         <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm" >
@@ -130,16 +125,16 @@
         <source src="http://techslides.com/demos/sample-videos/small.mp4"type="video/mp4" >
         <source src="http://techslides.com/demos/sample-videos/small.3gp "type="video/3gp" >
       </video>
-    </section>
+     </section>
     
-    <article class="article-5">
-    <section>
+    
+     <section>
          <h3>유튜브</h3>
         <iframe width="300" height="220" src="https://www.youtube.com/embed/MWMajJ1BPoI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
+     </section>
     </article>
     
-    
+    <a name="table"></a>
     <article class="article-6">
     <section>
       <h3>table</h3>
@@ -187,6 +182,8 @@
     <div class= "as" style="display:inline;float:left;width:50% ">2</div> <!--연두부분 -->
     
     </div>
+
+    <a name="grid"></a>
     <article>
       <div class="grid-container">
           <div class="grid-item item1">10월2일 : CSS Grid</div>
