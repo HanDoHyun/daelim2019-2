@@ -17,3 +17,10 @@ border test(v0.3.0)
 3.제이쿼리 선택자<br>
 4.제이쿼리 달력<br>
 5.제이쿼리 페이드<br>
+
+
+## 2019.11.8
+1.backstretch<br>
+2.Infinity Scroll<br>
+3.풀스크린 이미지 슬라이드<br>
+4.풀스크린 백그라운드(비디오)<br>

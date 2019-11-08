@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <script
+    src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+<script>
+//이벤트를 연결합니다.
+$(document).ready(function(){
+var a=1;
+var appendDocument=function(){
+ 
+    for(var i=0;i<20;i++){
+
+//문서 객체를 생성합니다.
+$('<h1>Infinity Scroll'+a+'</h1>').appendTo('body');
+a++;
+    }
+};
+
+//초기에 문서 객체를 추가합니다.
+appendDocument();
+//이벤트 연결
+$(window).scroll(function(){
+
+//변수삽입
+    var scrollHeight=$(window).scrollTop()+$(window).height();
+    var documentHeight=$(document).height();
+
+    //검사합니다
+    if(scrollHeight==documentHeight){
+        appendDocument();
+    }
+});
+});
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
