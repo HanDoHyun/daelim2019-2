@@ -1,0 +1,30 @@
+/*
+ * ghost.css v3.4.0
+ * Update: 2019.11.08
+ * Author: DongWook.Synn
+ */
+
+.container {
+  width: 100%;
+  text-align: center;
+  padding: 10% 0px;
+}
+
+.ghost {
+  align-items: center;
+  border: 3px solid #ffa200;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 70px;
+  padding: 25px 40px;
+  text-align: center; 
+  text-decoration: none;
+}
+
+.ghost:hover {
+  background-color:#ffa200;
+  color:black;
+}
